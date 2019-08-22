@@ -28,8 +28,8 @@ export default class Org extends SfdxCommand {
   protected static flagsConfig = {
     // flag with a value (-n, --name=VALUE)
     sobject: flags.string({char: 'o', description: 'sobject Name'}),
-    rtname: flags.boolean({char: 'r', description: 'Record Type column name'}),
-    file: flags.boolean({char: 'f', description: 'CSV file name'})
+    rtname: flags.string({char: 'r', description: 'Record Type column name'}),
+    file: flags.string({char: 'f', description: 'CSV file name'})
   };
 
   // Comment this out if your command does not require an org username
